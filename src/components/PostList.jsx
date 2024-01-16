@@ -1,8 +1,8 @@
-import { useContext } from "react";
+import React, { useContext } from "react";
 import Post from "./Post";
 import { PostList as PostListData } from "../store/post-list-store";
 
-const PostList = () => {
+function PostList() {
   const { postList } = useContext(PostListData);
   return (
     <>
@@ -11,6 +11,6 @@ const PostList = () => {
       ))}
     </>
   );
-};
+}
 
 export default PostList;

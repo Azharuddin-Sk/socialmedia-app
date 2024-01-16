@@ -1,8 +1,8 @@
-import { useContext } from "react";
+import React, { useContext } from "react";
 import { AiFillDelete } from "react-icons/ai";
 import { PostList } from "../store/post-list-store";
 
-const Post = ({ post }) => {
+function Post({ post }) {
   const { deletePost } = useContext(PostList);
 
   return (
@@ -29,6 +29,6 @@ const Post = ({ post }) => {
       </div>
     </div>
   );
-};
+}
 
 export default Post;

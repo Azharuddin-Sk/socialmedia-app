@@ -1,4 +1,6 @@
-const Header = () => {
+import React from "react";
+
+function Header() {
   return (
     <header className="p-3 text-bg-dark">
       <div className="container">
@@ -70,6 +72,6 @@ const Header = () => {
       </div>
     </header>
   );
-};
+}
 
 export default Header;

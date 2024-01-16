@@ -1,4 +1,6 @@
-const Sidebar = ({ selectedTab, setSelectedTab }) => {
+import React from "react";
+
+function Sidebar({ selectedTab, setSelectedTab }) {
   return (
     <div
       className="d-flex flex-column flex-shrink-0 p-3 text-bg-dark sidebar"
@@ -97,6 +99,6 @@ const Sidebar = ({ selectedTab, setSelectedTab }) => {
       </div>
     </div>
   );
-};
+}
 
 export default Sidebar;
