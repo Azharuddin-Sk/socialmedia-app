@@ -24,14 +24,14 @@ function PostListProvider({ children }) {
     DEFAULT_POST_LIST
   );
 
-  function addPost(userId, postTitle, postBody, reactions, tags) {
+  function addPost(userId, postTitle, postBody, likes, tags) {
     dispatchPostList({
       type: "ADD_POST",
       payload: {
         id: Date.now(),
         title: postTitle,
         body: postBody,
-        reactions: reactions,
+        likes: likes,
         userId: userId,
         tags: tags,
       },
@@ -59,17 +59,17 @@ const DEFAULT_POST_LIST = [
     id: "1",
     title: "Thought of the day",
     body: "Don't worry, be Happy :)",
-    Likes: 1000,
+    likes: 1000,
     userId: "user-9",
     tags: ["#behappy"],
   },
   {
     id: "2",
     title: "Just Chill",
-    body: "Just chill..Just chill",
-    Likes: 500,
+    body: " Life goes on, you need to just chill",
+    likes: 500,
     userId: "user-12",
-    tags: ["#justchill"],
+    tags: ["#chill"],
   },
 ];
 

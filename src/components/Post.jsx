@@ -23,8 +23,8 @@ function Post({ post }) {
             {tag}
           </span>
         ))}
-        <div className="alert alert-success reactions" role="alert">
-          This post has been reacted by {post.reactions} people.
+        <div className="alert alert-success likes" role="alert">
+          This post has been Liked by {post.likes} people.
         </div>
       </div>
     </div>
